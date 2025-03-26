@@ -52,7 +52,9 @@ const Menu = () => {
             <p className="text-[12px] text-left">{item.desc}</p>
             <div className="flex flex-row items-center justify-between mt-4 gap-2">
               <p className="text-[25px]">{item.price}</p>
-              <button className="hover:scale-105 transition-transform cursor-pointer text-[#FFFF00] text-[12px] border-white border-2 rounded-[8px] py-1 px-6">Beli</button>
+              <a target="_blank" href="https://wa.me/6289528445401?text=Halo%20Streetdrink27b,%20Saya%20ingin%20pesan...">
+                <button className="hover:scale-105 transition-transform cursor-pointer text-[#FFFF00] text-[12px] border-white border-2 rounded-[8px] py-1 px-6">Beli</button>
+              </a>
             </div>
           </div>
         ))}

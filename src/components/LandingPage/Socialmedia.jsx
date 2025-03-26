@@ -10,7 +10,7 @@ const SocialMedia = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed right-12 bottom-12 sm:right-26 sm:bottom-16 flex flex-col items-center gap-3 z-90">
+    <div className="fixed right-8 bottom-8 sm:right-26 sm:bottom-16 flex flex-col items-center gap-3 z-90">
       {isOpen && (
         <>
           <a
