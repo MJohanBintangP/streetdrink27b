@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Socialmedia from './components/Socialmedia';
-import HeaderBox from './components/HeaderBox';
-import Topbox from './components/Topbox';
-import Menu from './components/Menu';
-import Testimonials from './components/Testimonials';
-import Bottombox from './components/Bottombox';
-import Location from './components/Location';
-import Footer from './components/Footer';
+import Header from './components/LandingPage/Header';
+import Socialmedia from './components/LandingPage/Socialmedia';
+import HeaderBox from './components/LandingPage/HeaderBox';
+import Topbox from './components/LandingPage/Topbox';
+import Menu from './components/LandingPage/Menu';
+import Testimonials from './components/LandingPage/Testimonials';
+import Bottombox from './components/LandingPage/Bottombox';
+import Location from './components/LandingPage/Location';
+import Footer from './components/LandingPage/Footer';
 import MenuPage from './pages/MenuPage';
 
 const Home = () => {
@@ -31,7 +31,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<MenuPage />} />
+        <Route path="/Menu" element={<MenuPage />} />
       </Routes>
     </Router>
   );
