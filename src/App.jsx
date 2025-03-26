@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
 import Header from './components/LandingPage/Header';
 import Socialmedia from './components/LandingPage/Socialmedia';
 import HeaderBox from './components/LandingPage/HeaderBox';
@@ -11,6 +12,9 @@ import Footer from './components/LandingPage/Footer';
 import MenuPage from './pages/MenuPage';
 
 const Home = () => {
+  useEffect(() => {
+    document.title = 'StreetDrink27B';
+  }, []);
   return (
     <div className="font-[jua]">
       <Header />
