@@ -9,14 +9,14 @@ const Header = () => {
   return (
     <header id="about" className="relative h-screen bg-[#3D91FF] px-4 sm:px-8 md:px-12 lg:px-16 overflow-hidden">
       {/* Background Images */}
-      <img className="absolute right-22 top-20 w-60 sm:w-60 md:w-72 lg:w-80 xl:w-[550px] z-1" src={headerImg} alt="Header" />
-      <img className="absolute -right-40 -top-20 w-86 sm:w-[500px] md:w-[550px] lg:w-[600px] xl:w-[650px] max-w-screen overflow-hidden" src={blobs} alt="Blobs" />
+      <img className="absolute right-20 top-20 w-60 sm:w-60 md:w-72 lg:w-80 xl:w-[550px] z-1" src={headerImg} alt="Header" />
+      <img className="absolute -right-40 -top-20 w-80 sm:w-[500px] md:w-[550px] lg:w-[600px] xl:w-[650px] max-w-screen overflow-hidden" src={blobs} alt="Blobs" />
 
       {/* Navbar */}
       <Navbar />
 
       {/* Hero Section */}
-      <div className="mx-auto max-w-7xl text-left sm:text-left">
+      <div className="mx-auto max-w-[320px] sm:max-w-7xl text-left sm:text-left">
         <h1 className="relative max-w-[200px] sm:max-w-[600px] top-62 sm:top-16 text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-bold leading-tight">&quot;Seger banget&#39; sehatnya dapet&quot;</h1>
 
         <div className="relative top-76 sm:top-50">

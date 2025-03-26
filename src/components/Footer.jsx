@@ -3,8 +3,8 @@ import people from '../assets/people.svg';
 
 const Footer = () => {
   return (
-    <div className="relative overflow-hidden">
-      <img className="absolute -top-[12rem] lg:-top-[18.7rem] left-4 lg:left-30 lg:w-[550px] w-[350px] z-10" src={people} alt="people" />
+    <div className="relative">
+      <img className="absolute -top-[10.9rem] lg:-top-[18.7rem] left-8 lg:left-30 lg:w-[550px] w-[320px] z-10" src={people} alt="people" />
       <footer id="footer" className="overflow-hidden relative bg-[#3D91FF] lg:mt-[25rem] mt-[18rem] w-full border-t-28 border-[#FFFF00] p-8">
         <div className="flex sm:gap-10 lg:gap-30 gap-10 max-w-[1400px] mx-auto mt-[2rem] mb-[4rem] text-white flex-wrap">
           <div className="flex flex-col gap-5">
