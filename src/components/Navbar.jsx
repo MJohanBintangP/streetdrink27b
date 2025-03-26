@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { GlobeSimple, List, X } from '@phosphor-icons/react';
-import logo from '../assets/logo.png';
+import logo from '../assets/Logo.png';
 
 const NAV_ITEMS = [
   { id: 'about', label: 'Tentang Kami' },
