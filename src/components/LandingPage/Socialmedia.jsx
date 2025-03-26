@@ -1,8 +1,10 @@
 import { useState } from 'react';
-import { User, X } from '@phosphor-icons/react';
+import { X } from '@phosphor-icons/react';
 import whatsapp from '../../assets/whatsapp.svg';
 import instagram from '../../assets/instagram.svg';
 import youtube from '../../assets/youtube.svg';
+import cupLogo from '../../assets/cupLogo.svg';
+import grab from '../../assets/grabLogo.png';
 
 const SocialMedia = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,10 +37,18 @@ const SocialMedia = () => {
           >
             <img src={youtube} alt="" />
           </a>
+          <a
+            href="https://r.grab.com/g/2-1-6-C66BL74ATVKEWE"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white w-[55px] h-[55px] rounded-full flex justify-center items-center drop-shadow-[4px_6px_3px_rgba(0,0,0,0.25)] transition-all"
+          >
+            <img className="w-5" src={grab} alt="cupLogo" />
+          </a>
         </>
       )}
       <button onClick={() => setIsOpen(!isOpen)} className="cursor-pointer bg-[#FFFF00] drop-shadow-[4px_6px_3px_rgba(0,0,0,0.25)] w-[55px] h-[55px] rounded-full flex justify-center items-center z-90 transition-all">
-        {isOpen ? <X size={25} weight="bold" /> : <User size={25} weight="bold" />}
+        {isOpen ? <X size={25} weight="bold" /> : <img className="w-[25px]" src={cupLogo} alt="" />}
       </button>
     </div>
   );
