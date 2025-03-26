@@ -1,4 +1,4 @@
-import cookie from '../assets/cookie.svg';
+import cookie from '../assets/Cookie.svg';
 import people from '../assets/people.svg';
 
 const Footer = () => {
