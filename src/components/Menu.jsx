@@ -28,7 +28,7 @@ const Menu = () => {
           { img: blueCoco, name: 'Blue Coco', desc: 'Air kelapa asli, ekstrak bunga telang, ekstrak daun kelor dengan daging kelapa', price: '10k' },
           { img: kopisusuGulaAren, name: 'Kopi Susu Gula Aren', desc: 'Gula aren, kremer, susu segar, ekspreso', price: '13k' },
           { img: kopisusuTarikCold, name: 'Kopi Susu Tarik', desc: 'Susu kental manis, kremer, susu segar, ekspreso', price: '13k' },
-          { img: susumaduBungatelang, name: 'Susu Madu Bunga Telang', desc: 'Susu kental manis, kremer, susu segar, ekstrak bunga telang', price: '13k' },
+          { img: susumaduBungatelang, name: 'Susu Madu Bunga Telang', desc: 'Susu kental manis, kremer, susu segar, ekstrak bunga telang', price: '12k' },
         ].map((item, index) => (
           <div key={index} className="flex flex-col w-full sm:w-[230px]">
             <img
