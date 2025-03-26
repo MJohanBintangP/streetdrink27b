@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Navbar from '../components/MenuPage/Navbar';
 import MenuKopi from '../components/MenuPage/Kopi';
 import NonKopi from '../components/MenuPage/NonKopi';
@@ -6,6 +7,10 @@ import GiftArt from '../components/MenuPage/Art';
 import Footer from '../components/MenuPage/Footer';
 
 const MenuPage = () => {
+  useEffect(() => {
+    document.title = 'StreetDrink27B - Menu';
+  }, []);
+
   return (
     <div className="font-[jua] bg-white h-full">
       <Navbar />
