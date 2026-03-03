@@ -6,8 +6,6 @@ import kopisusuGulaAren from "../../assets/kopi/kopiSupel.webp";
 import blueMountain from "../../assets/kopi/blueMountain.webp";
 import kopisusuTarikCold from "../../assets/kopi/kopisusuTarikCold.webp";
 import v60filter from "../../assets/kopi/v60Filter.webp";
-import kopiSusutarikHot from "../../assets/menuHot/kopisusuTarikHot.webp";
-import kopiSusuTubruk from "../../assets/menuHot/kopisusuTubruk.webp";
 
 const Kopi = () => {
   const [isColdMenu, setIsColdMenu] = useState(true);
@@ -18,19 +16,12 @@ const Kopi = () => {
       name: "Americano",
       price: "10k",
     },
-    { img: javanoCoffee, name: "Javano / Coconut Coffee", price: "10k" },
+    { img: javanoCoffee, name: "Coconut americano", price: "13k" },
     { img: kopisusuGulaAren, name: "Kopi Supel", price: "13k" },
     { img: blueMountain, name: "Blue Mountain", price: "13k" },
     { img: kopisusuTarikCold, name: "Kopi Susu Tarik", price: "10k" },
-    { img: v60filter, name: "V60 Filter", price: "17k" },
+    { img: v60filter, name: "V60 Filter", price: "17k", bestSeller: true },
   ];
-
-  const hotMenu = [
-    { img: kopiSusutarikHot, name: "Kopi Susu Tarik", price: "10k" },
-    { img: kopiSusuTubruk, name: "Kopi Susu Tubruk", price: "8k" },
-  ];
-
-  const currentMenu = isColdMenu ? coldMenu : hotMenu;
 
   return (
     <Element name="kopi">
@@ -40,7 +31,7 @@ const Kopi = () => {
             <div className="flex justify-between items-center mx-auto max-w-[1400px] mb-16 flex-wrap">
               <div className="flex flex-col text-left md:text-left">
                 <h1 className="text-[#3D91FF] text-3xl">Kopi</h1>
-                <p className="text-[#6B7B90] max-w-[200px]">
+                <p className="text-[#6B7B90] max-w-xs">
                   Berikut beberapa menu minuman kopi andalan kami.
                 </p>
               </div>
@@ -53,31 +44,44 @@ const Kopi = () => {
             </div>
 
             <div className="flex justify-center sm:justify-start flex-wrap gap-10 mx-auto max-w-[1400px]">
-              {currentMenu.map((item, index) => (
-                <div key={index} className="flex flex-col w-[200px]">
-                  <img
-                    src={item.img}
-                    alt={item.name}
-                    loading="lazy"
-                    decoding="async"
-                    className="drop-shadow-[6px_8px_1px_rgba(0,0,0,0.80)] rounded-3xl w-[200px] h-[250px] object-cover mb-8"
-                  />
-                  <h1 className="text-[#3D91FF] text-[17px] text-left">
-                    {item.name}
-                  </h1>
-                  <div className="flex items-center justify-between mt-4">
-                    <p className="text-[20px] text-[#3D91FF]">{item.price}</p>
-                    <a
-                      target="_blank"
-                      href="https://wa.me/6289528445401?text=Halo%20Streetdrink27b,%20Saya%20ingin%20pesan..."
-                    >
-                      <button className="cursor-pointer text-black text-[12px] border-black bg-[#FFFF00] border-2 rounded-lg py-1 px-6 hover:scale-105 transition-transform">
-                        Beli
-                      </button>
-                    </a>
+              {isColdMenu ? (
+                coldMenu.map((item, index) => (
+                  <div key={index} className="flex flex-col w-[200px]">
+                    <div className="relative">
+                      <img
+                        src={item.img}
+                        alt={item.name}
+                        loading="lazy"
+                        decoding="async"
+                        className="drop-shadow-[6px_8px_1px_rgba(0,0,0,0.80)] rounded-3xl w-[200px] h-[250px] object-cover mb-8"
+                      />
+                      {item.bestSeller && (
+                        <div className="absolute top-2 right-2 bg-[#FFFF00] text-black text-[10px] px-2 py-1 rounded-md font-semibold border border-black">
+                          ✓ Best Seller
+                        </div>
+                      )}
+                    </div>
+                    <h1 className="text-[#3D91FF] text-[17px] text-left">
+                      {item.name}
+                    </h1>
+                    <div className="flex items-center justify-between mt-4">
+                      <p className="text-[20px] text-[#3D91FF]">{item.price}</p>
+                      <a
+                        target="_blank"
+                        href="https://wa.me/6289528445401?text=Halo%20Streetdrink27b,%20Saya%20ingin%20pesan..."
+                      >
+                        <button className="cursor-pointer text-black text-[12px] border-black bg-[#FFFF00] border-2 rounded-lg py-1 px-6 hover:scale-105 transition-transform">
+                          Beli
+                        </button>
+                      </a>
+                    </div>
                   </div>
+                ))
+              ) : (
+                <div className="w-[200px] h-[250px] rounded-3xl border-2 border-black bg-[#FFFF00] text-black flex items-center justify-center text-center px-4 drop-shadow-[6px_8px_1px_rgba(0,0,0,0.80)]">
+                  Coming Soon
                 </div>
-              ))}
+              )}
             </div>
           </div>
         </section>

@@ -13,13 +13,20 @@ const NonKopi = () => {
 
   const coldMenu = [
     { img: susumaduBungatelang, name: "Susu Madu Bunga Telang", price: "13k" },
-    { img: senjaJingga, name: "Senja Jingga (Penyemangat)", price: "10k" },
+    { img: senjaJingga, name: "Iced Starry Night", price: "10k" },
     { img: blueCoco, name: "Blue Coco (Penyegaran)", price: "10k" },
     { img: darkChoco, name: "Chocolate", price: "13k" },
-    { img: tehTarik, name: "Tea Tarik +plus", price: "13k" },
+    { img: tehTarik, name: "Tea Tarik +plus", price: "13k", bestSeller: true },
   ];
 
-  const hotMenu = [{ img: tehTarikhot, name: "Tea Tarik +plus", price: "15k" }];
+  const hotMenu = [
+    {
+      img: tehTarikhot,
+      name: "Tea Tarik +plus",
+      price: "15k",
+      bestSeller: true,
+    },
+  ];
 
   const currentMenu = isColdMenu ? coldMenu : hotMenu;
 
@@ -31,7 +38,7 @@ const NonKopi = () => {
             <div className="flex justify-between items-center mx-auto max-w-[1400px] mb-16 flex-wrap">
               <div className="flex flex-col text-left md:text-left">
                 <h1 className="text-[#3D91FF] text-3xl">Non-Kopi</h1>
-                <p className="text-[#6B7B90] max-w-[200px]">
+                <p className="text-[#6B7B90] max-w-xs">
                   Berikut beberapa menu minuman non-kopi andalan kami.
                 </p>
               </div>
@@ -46,13 +53,20 @@ const NonKopi = () => {
             <div className="flex justify-center md:justify-start flex-wrap gap-10 mx-auto max-w-[1400px]">
               {currentMenu.map((item, index) => (
                 <div key={index} className="flex flex-col w-[200px]">
-                  <img
-                    src={item.img}
-                    alt={item.name}
-                    loading="lazy"
-                    decoding="async"
-                    className="drop-shadow-[6px_8px_1px_rgba(0,0,0,0.80)] rounded-3xl w-[200px] h-[250px] object-cover mb-8"
-                  />
+                  <div className="relative">
+                    <img
+                      src={item.img}
+                      alt={item.name}
+                      loading="lazy"
+                      decoding="async"
+                      className="drop-shadow-[6px_8px_1px_rgba(0,0,0,0.80)] rounded-3xl w-[200px] h-[250px] object-cover mb-8"
+                    />
+                    {item.bestSeller && (
+                      <div className="absolute top-2 right-2 bg-[#FFFF00] text-black text-[10px] px-2 py-1 rounded-md font-semibold border border-black">
+                        ✓ Best Seller
+                      </div>
+                    )}
+                  </div>
                   <h1 className="text-[#3D91FF] text-[17px] text-left">
                     {item.name}
                   </h1>

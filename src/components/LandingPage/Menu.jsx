@@ -78,14 +78,14 @@ const Menu = () => {
           {
             img: kopisusuTarikCold,
             name: "Kopi Susu Tarik",
-            desc: "Susu kental manis, kremer, susu segar, ekspreso",
+            desc: "Creamer, skm, fresh milk, espresso",
             price: "10k",
           },
           {
             img: susumaduBungatelang,
             name: "Susu Madu Bunga Telang",
-            desc: "Susu kental manis, kremer, susu segar, ekstrak bunga telang",
-            price: "12k",
+            desc: "Creamer, skm, fresh milk, ekstrak bunga telang, madu",
+            price: "13k",
           },
         ].map((item, index) => (
           <div key={index} className="flex flex-col w-full sm:w-[230px]">
