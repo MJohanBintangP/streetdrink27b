@@ -2,10 +2,13 @@ import { Element } from "react-scroll";
 import { useState } from "react";
 import americanoTropicalfruit from "../../assets/kopi/americanoTropicalfruit.webp";
 import javanoCoffee from "../../assets/kopi/JavanoCoconutCoffee.webp";
+import honeyAmericano from "../../assets/kopi/honeyAmericano.jpeg";
+import americanoTropical from "../../assets/kopi/americanoTropical.jpeg";
 import kopisusuGulaAren from "../../assets/kopi/kopiSupel.webp";
 import blueMountain from "../../assets/kopi/blueMountain.webp";
 import kopisusuTarikCold from "../../assets/kopi/kopisusuTarikCold.webp";
 import v60filter from "../../assets/kopi/v60Filter.webp";
+import kopiGunting from "../../assets/kopi/kopiGunting.jpeg";
 
 const Kopi = () => {
   const [isColdMenu, setIsColdMenu] = useState(true);
@@ -17,10 +20,22 @@ const Kopi = () => {
       price: "10k",
     },
     { img: javanoCoffee, name: "Coconut americano", price: "13k" },
+    {
+      img: honeyAmericano,
+      name: "Honey americano",
+      price: "15k",
+      bestSeller: true,
+    },
+    {
+      img: americanoTropical,
+      name: "Americano Tropical Fruity",
+      price: "15k",
+    },
     { img: kopisusuGulaAren, name: "Kopi Supel", price: "13k" },
     { img: blueMountain, name: "Blue Mountain", price: "13k" },
     { img: kopisusuTarikCold, name: "Kopi Susu Tarik", price: "10k" },
     { img: v60filter, name: "V60 Filter", price: "17k", bestSeller: true },
+    { img: kopiGunting, name: "Kopi Gunting", price: "10k", bestSeller: true },
   ];
 
   return (
