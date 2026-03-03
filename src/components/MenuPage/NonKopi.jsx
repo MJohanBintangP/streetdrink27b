@@ -2,7 +2,7 @@ import { Element } from "react-scroll";
 import { useState } from "react";
 
 import susumaduBungatelang from "../../assets/nonKopi/susumaduBungatelang.webp";
-import senjaJingga from "../../assets/nonKopi/senjaJingga.webp";
+import senjaJingga from "../../assets/nonKopi/staryNight.jpeg";
 import blueCoco from "../../assets/nonKopi/blueCoco.webp";
 import darkChoco from "../../assets/nonKopi/darkChoco.webp";
 import tehTarik from "../../assets/nonKopi/tehTarikcold.webp";
@@ -13,7 +13,7 @@ const NonKopi = () => {
 
   const coldMenu = [
     { img: susumaduBungatelang, name: "Susu Madu Bunga Telang", price: "13k" },
-    { img: senjaJingga, name: "Iced Starry Night", price: "10k" },
+    { img: senjaJingga, name: "Iced Starry Night", price: "15k" },
     { img: blueCoco, name: "Blue Coco (Penyegaran)", price: "10k" },
     { img: darkChoco, name: "Chocolate", price: "13k" },
     { img: tehTarik, name: "Tea Tarik +plus", price: "13k", bestSeller: true },
