@@ -82,7 +82,7 @@ const Footer = () => {
         <div className="flex flex-col max-w-[1045px] lg:ml-8 md:ml-4 sm:ml-0 ml-0 text-left">
           <hr className="border-white" />
           <p className="mt-8 text-white font-[inter]">
-            2025 Streetdrink27b. All Rights Reserved
+            2026 Streetdrink27b. All Rights Reserved
           </p>
         </div>
       </footer>
