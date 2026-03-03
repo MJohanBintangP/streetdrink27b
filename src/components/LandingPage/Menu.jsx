@@ -1,7 +1,7 @@
 import { ClipboardText } from "@phosphor-icons/react";
 import { useNavigate } from "react-router-dom";
 import blueCoco from "../../assets/nonKopi/blueCoco.webp";
-import kopisusuGulaAren from "../../assets/kopi/kopisusuGulaAren.webp";
+import kopisusuGulaAren from "../../assets/kopi/kopiSupel.webp";
 import kopisusuTarikCold from "../../assets/kopi/kopisusuTarikCold.webp";
 import susumaduBungatelang from "../../assets/kopi/susumaduBungatelang.webp";
 import Cookie from "../../assets/CookieSmall.svg";
@@ -66,13 +66,13 @@ const Menu = () => {
           {
             img: blueCoco,
             name: "Blue Coco",
-            desc: "Air kelapa asli, ekstrak bunga telang, ekstrak daun kelor dengan daging kelapa",
-            price: "10k",
+            desc: "100% air kelapa asli, exstrak bunga telang, dan daging kelapa asli.",
+            price: "13k",
           },
           {
             img: kopisusuGulaAren,
             name: "Kopi Supel",
-            desc: "Gula aren, kremer, susu segar, ekspreso",
+            desc: "Gula aren, creamer, skm , fresh milk , espresso",
             price: "13k",
           },
           {

@@ -2,7 +2,7 @@ import { Element } from "react-scroll";
 import { useState } from "react";
 import americanoTropicalfruit from "../../assets/kopi/americanoTropicalfruit.webp";
 import javanoCoffee from "../../assets/kopi/JavanoCoconutCoffee.webp";
-import kopisusuGulaAren from "../../assets/kopi/kopisusuGulaAren.webp";
+import kopisusuGulaAren from "../../assets/kopi/kopiSupel.webp";
 import blueMountain from "../../assets/kopi/blueMountain.webp";
 import kopisusuTarikCold from "../../assets/kopi/kopisusuTarikCold.webp";
 import v60filter from "../../assets/kopi/v60Filter.webp";
